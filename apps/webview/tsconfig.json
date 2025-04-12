@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": false,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "noFallthroughCasesInSwitch": true,
+    "module": "ESNext",
+    "resolveJsonModule": true,
+    "moduleResolution": "bundler",
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "outDir": "./dist",
+    "baseUrl": ".",
+    "noEmit": false, // false로 두고 allowImportingTsExtensions 제거
+    "plugins": [{ "name": "@yarnpkg/typescript-plugin" }],
+    "paths": {
+      "@/*": ["src/*"],
+      "@mozu/ui": ["../ui/dist"],
+      "@mozu/design-token": ["../design-token/dist"],
+      "@configs/util": ["../util-config/dist"]
+    },
+    "typeRoots": ["node_modules/@types", "src/@types"]
+  },
+  "include": ["src/**/*", "vite.config.ts"],
+  "exclude": ["node_modules", "dist"]
+}

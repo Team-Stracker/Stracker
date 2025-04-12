@@ -1,0 +1,35 @@
+# 🔥 Common
+.DS_Store
+*.log
+*.tsbuildinfo
+
+# 🔥 Node
+node_modules/
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+
+# 🔥 Turborepo
+.turbo/
+
+# 🔥 Build output
+dist/
+build/
+.next/
+out/
+
+# 🔥 Env
+.env
+.env.*
+.env.local
+
+# 🔥 IDE
+.vscode/
+.idea/
+
+# 🔥 OS
+Thumbs.db
